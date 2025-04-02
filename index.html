@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosolve Rápido: Equação do 2º Grau</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body onload="Carregar()">
+    
+    <!--Espaco de Entrada dos Dados-->
+    <div class="normal">
+        <h1>Equação Quadrática</h1>
+        <p>ax<sup>2</sup>+ bx + c = 0</p>
+        <input type="number" name="valorA" id="valorA" class="valorABC" placeholder="a">
+        <span>x<sup>2</sup> + </span>
+        <input type="number" name="valorB" id="valorB" class="valorABC" placeholder="b">
+        <span>x +</span>
+        <input type="number" name="valorC" id="valorC" class="valorABC" placeholder="c">
+        <span>= 0</span>
+        <p>
+            <input type="button" value="Calcular" class="operacao" onclick="Calcular()">
+            <a href="index.html"><input type="button" value="Reset" class="operacao" onclick="limpar()"></a>
+        </p>
+    </div>
+ 
+    <!--Espaco dos resultados!!!-->
+    <div id="resultado" class="resultado">
+        <h1>Resultado...</h1>
+        <p class="esquerda" id="delta"> </p>
+        <p class="esquerda" id="x1"></p>
+        <p class="esquerda" id="x2"></p>
+    </div>
+
+    <!--Proxima pagina-->
+    <p class="ultimo"><a href="outras/formula.html"><input type="button" value="Sobre Equação" id="sobre"></a></input></p>
+
+    <!--Meu Perfil-->
+    <footer>
+        <p class="eu">Site desenvolvido pelo: Dev Chiqui-py</a></p>
+        <nav class="link">
+            <a href="https://www.youtube.com/@DevChiqui-py" target="_blank">Youtube</a>
+            <a href="https://www.facebook.com/profile.php?id=61574490167509&__cft__[0]=AZV9If-CiV3bAJGgI9GTL0RGwh3YRl2L1xrh4wGYKyGVRhfmn-9K7eJTDkwGbCfU4frQS7Ug93gBePOO0S9atsts94V3oiRNkTyxxr2BGowo7Pfmev_Io1QbkkNUoP0Z1x9dm6McaFvOCBbEOIdDWn7BWg0_1uXsVjrKyizPnAxIdg&__tn__=R-R" target="_blank">Facebook</a>
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fdevchiquipy%3Figsh%3DYzljYTk1ODg3Zg%253D%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1VRDKvfitmqgKuS2VmINw6LeX_R17ditb3MvrncTSck5F1fGcX4Vio9PI_aem_ZuhEh8rBiPTLA7a6PwieeA&h=AT15vERzg8ZaYHHacP1fhjG5W5beUKp-7RUnHRULU7h2fL3QqBbNjG3BSwQV2tmnaB_z5gyFhmgB7FPaT0Hz3edROjKZyiX-SixERh1W-mpIQjuANMiDq79zub6J3nNUwraFDn-H9FPPHILv&__tn__=R]-R&c[0]=AT1dLMmOLSAu4r_v6I2237IxHI3On8-MUwG1q15GsLASZnVrSXmVr7SjsXqFod1SV-1PhlguuGYWEbsnwwtTclO9ZZDJT50_QHmQLvouVIZkyPTVdK8fFK9kum_4lJndcnfYv7mBhbgQG3SUZYLYEK7YaXru8yU8Plhuub6Zph5KKZMh53kKYthb" target="_blank">Instagram</a>
+            <a href="https://github.com/devchiquipy" target="_blank">Github</a>
+        </nav>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
